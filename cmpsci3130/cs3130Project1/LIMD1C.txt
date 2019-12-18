@@ -1,0 +1,159 @@
+Script started on Tue Sep 25 21:26:24 2018
+[?1034hbash-3.2$ cat main.cpp
+
+//  main.cpp
+//  fibComptime
+//  Created by Dara Lim on 9/23/18.
+//  Copyright © 2018 Dara Lim. All rights reserved.
+
+#include <iostream>
+#include <ctime>
+using namespace std;
+using namespace std::chrono;
+
+//Fibonacci function with recursion definition
+int RecFib(int n)
+{
+    if(n <= 1){
+        return n;
+    }
+    else{
+        return RecFib(n-1) + RecFib(n-2);
+    }
+}
+
+//Fibonacci function with iteration method
+int ItFibo(int n){
+    int first = 0;
+    int second = 1;
+    int next;
+    for(int i = 0; i <= n; i++){
+        if(i <= 1){
+            next = i;
+        }
+        else{
+            next = first + second;
+            first = second;
+            second = next;
+        }
+    }
+    return next;
+}
+
+int main(int argc, const char * argv[]) {
+    int N;
+    cout << "Enter the positive integer N and the programm will find ";
+    cout << "the fibonacci number and the time to execution "<<endl;
+    cin >> N;
+    
+    //Start timing the fibonacci function definition
+    auto start = high_resolution_clock::now();
+    cout << "The fibonacci number of " << N << " is: " << RecFib(N) <<endl;
+    //End timing the fibonacci function definition and calculate the duration
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(end - start);
+    cout << "Time taken by recursion definition is: " << duration.count() << " microseconds " <<endl;
+    
+    //Start timing the fibonacci function iteration
+    auto start1 = high_resolution_clock::now();
+    cout << "The fibonacci number of " << N << " is: " << ItFibo(N) << endl;
+    //End timing the fibonacci function definition and calculate the duration
+    auto end1 = high_resolution_clock::now();
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+    cout << "Time taken by iteration method is: " << duration1.count() << " microseconds " << endl;
+    
+    return 0;
+}
+bash-3.2$ g++ main.cpp
+[1mmain.cpp:48:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:51:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:52:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration = duration_cast<microseconds>(end - start);
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:59:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:60:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m6 warnings generated.
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+1
+The fibonacci number of 1 is: 1
+Time taken by recursion definition is: 57 microseconds 
+The fibonacci number of 1 is: 1
+Time taken by iteration method is: 10 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+2
+The fibonacci number of 2 is: 1
+Time taken by recursion definition is: 27 microseconds 
+The fibonacci number of 2 is: 1
+Time taken by iteration method is: 8 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+3
+The fibonacci number of 3 is: 2
+Time taken by recursion definition is: 24 microseconds 
+The fibonacci number of 3 is: 2
+Time taken by iteration method is: 8 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+4
+The fibonacci number of 4 is: 3
+Time taken by recursion definition is: 30 microseconds 
+The fibonacci number of 4 is: 3
+Time taken by iteration method is: 5 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+10
+The fibonacci number of 10 is: 55
+Time taken by recursion definition is: 31 microseconds 
+The fibonacci number of 10 is: 55
+Time taken by iteration method is: 5 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+20
+The fibonacci number of 20 is: 6765
+Time taken by recursion definition is: 159 microseconds 
+The fibonacci number of 20 is: 6765
+Time taken by iteration method is: 9 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+30
+The fibonacci number of 30 is: 832040
+Time taken by recursion definition is: 8773 microseconds 
+The fibonacci number of 30 is: 832040
+Time taken by iteration method is: 3 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+40
+The fibonacci number of 40 is: 102334155
+Time taken by recursion definition is: 810622 microseconds 
+The fibonacci number of 40 is: 102334155
+Time taken by iteration method is: 3 microseconds 
+bash-3.2$ ./a.out
+Enter the positive integer N and the programm will find the fibonacci number and the time to execution 
+43
+The fibonacci number of 43 is: 433494437
+Time taken by recursion definition is: 3333553 microseconds 
+The fibonacci number of 43 is: 433494437
+Time taken by iteration method is: 3 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Sep 25 21:28:12 2018

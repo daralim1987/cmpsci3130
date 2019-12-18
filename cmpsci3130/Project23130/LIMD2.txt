@@ -1,0 +1,828 @@
+Script started on Tue Oct 23 13:34:28 2018
+[?1034hbash-3.2$ cd PR[Kroject23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 100 elements is: 29 microseconds 
+Insertion sort time: 
+with 100 elements is: 23 microseconds 
+Bubble sort time: 
+with 100 elements is: 65 microseconds 
+Bubble sort with swap counting time: 
+with 100 elements is: 66 microseconds 
+Time taken by quick sort with 100 element is: 13 microseconds 
+Time taken by merge sort with 100 element is: 301 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:36:11 2018
+Script started on Tue Oct 23 13:37:15 2018
+[?1034hbash-3.2$ cd Desktop/[K[K[K[K[K[K[K[KProject23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ a[K./a.out
+Selection sort time: 
+with 1000 elements is: 2309 microseconds 
+Insertion sort time: 
+with 1000 elements is: 1430 microseconds 
+Bubble sort time: 
+with 1000 elements is: 5264 microseconds 
+Bubble sort with swap counting time: 
+with 1000 elements is: 4978 microseconds 
+Time taken by quick sort with 1000 element is: 142 microseconds 
+Time taken by merge sort with 1000 element is: 11101 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:38:53 2018
+Script started on Tue Oct 23 13:39:37 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ a[K./a.out
+Selection sort time: 
+with 10000 elements is: 200224 microseconds 
+Insertion sort time: 
+with 10000 elements is: 123718 microseconds 
+Bubble sort time: 
+with 10000 elements is: 565168 microseconds 
+Bubble sort with swap counting time: 
+with 10000 elements is: 569594 microseconds 
+Time taken by quick sort with 10000 element is: 1589 microseconds 
+Time taken by merge sort with 10000 element is: 1143168 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:41:22 2018
+Script started on Tue Oct 23 13:43:21 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 100 elements almost sorted is: 32 microseconds 
+Insertion sort time: 
+with 100 elements almost sorted is: 9 microseconds 
+Bubble sort time: 
+with 100 elements almost sorted is: 39 microseconds 
+Bubble sort with swap counting time: 
+with 100 elements almost sorted is: 40 microseconds 
+Time taken by quick sort with 100 element almost sorted is: 9 microseconds 
+Time taken by merge sort with 100 element almost sorted is: 308 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:44:20 2018
+Script started on Tue Oct 23 13:45:09 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 1000 elements almost sorted is: 2328 microseconds 
+Insertion sort time: 
+with 1000 elements almost sorted is: 292 microseconds 
+Bubble sort time: 
+with 1000 elements almost sorted is: 2791 microseconds 
+Bubble sort with swap counting time: 
+with 1000 elements almost sorted is: 3058 microseconds 
+Time taken by quick sort with 1000 element almost sorted is: 148 microseconds 
+Time taken by merge sort with 1000 element almost sorted is: 11761 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:46:27 2018
+Script started on Tue Oct 23 13:48:01 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 10000 elements almost sorted is: 203132 microseconds 
+Insertion sort time: 
+with 10000 elements almost sorted is: 124377 microseconds 
+Bubble sort time: 
+with 10000 elements almost sorted is: 442032 microseconds 
+Bubble sort with swap counting time: 
+with 10000 elements almost sorted is: 477227 microseconds 
+Time taken by quick sort with 10000 element almost sorted is: 3441 microseconds 
+Time taken by merge sort with 10000 element almost sorted is: 1105976 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:49:42 2018
+Script started on Tue Oct 23 13:51:29 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 100 elements sorted is: 32 microseconds 
+Insertion sort time: 
+with 100 elements sorted is: 5 microseconds 
+Bubble sort time: 
+with 100 elements sorted is: 28 microseconds 
+Bubble sort with swap counting time: 
+with 100 elements sorted is: 29 microseconds 
+Time taken by quick sort with 100 elements sorted is: 20 microseconds 
+Time taken by merge sort with 100 element sorted is: 218 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:53:02 2018
+Script started on Tue Oct 23 13:54:05 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 1000 elements sorted is: 2385 microseconds 
+Insertion sort time: 
+with 1000 elements sorted is: 18 microseconds 
+Bubble sort time: 
+with 1000 elements sorted is: 2330 microseconds 
+Bubble sort with swap counting time: 
+with 1000 elements sorted is: 2292 microseconds 
+Time taken by quick sort with 1000 elements sorted is: 1528 microseconds 
+Time taken by merge sort with 1000 element sorted is: 11100 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:55:20 2018
+Script started on Tue Oct 23 13:56:06 2018
+[?1034hbash-3.2$ cd Project23130/
+bash-3.2$ cd Project23130/
+bash-3.2$ g++ main.cpp 
+[1mmain.cpp:17:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:33:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end1 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:34:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration1 = duration_cast<microseconds>(end1 - start1);
+[0;1;32m    ^
+[0m[1mmain.cpp:42:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:55:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end2 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:56:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration2 = duration_cast<microseconds>(end2 - start2);
+[0;1;32m    ^
+[0m[1mmain.cpp:64:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:79:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end3 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:80:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration3 = duration_cast<microseconds>(end3 - start3);
+[0;1;32m    ^
+[0m[1mmain.cpp:88:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:106:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end4 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:107:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration4 = duration_cast<microseconds>(end4 - start4);
+[0;1;32m    ^
+[0m[1mmain.cpp:247:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:250:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end5 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:251:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration5 = duration_cast<microseconds>(end5 - start5);
+[0;1;32m    ^
+[0m[1mmain.cpp:257:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto start14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:260:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto end14 = high_resolution_clock::now();
+[0;1;32m    ^
+[0m[1mmain.cpp:261:5: [0m[0;1;35mwarning: [0m[1m'auto' type specifier is a C++11 extension
+      [-Wc++11-extensions][0m
+    auto duration14 = duration_cast<microseconds>(end14 - start14);
+[0;1;32m    ^
+[0m18 warnings generated.
+bash-3.2$ ./a.out
+Selection sort time: 
+with 10000 elements sorted is: 196554 microseconds 
+Insertion sort time: 
+with 10000 elements sorted is: 88 microseconds 
+Bubble sort time: 
+with 10000 elements sorted is: 200981 microseconds 
+Bubble sort with swap counting time: 
+with 10000 elements sorted is: 200077 microseconds 
+Time taken by quick sort with 10000 elements sorted is: 82049 microseconds 
+Time taken by merge sort with 10000 element sorted is: 1085856 microseconds 
+bash-3.2$ exit
+exit
+
+Script done on Tue Oct 23 13:58:04 2018

@@ -1,0 +1,450 @@
+Script started on Wed Nov 21 21:02:59 2018
+[?1034hbash-3.2$ cat BST.cpp 
+#include<iostream>
+#include<cstdlib>
+
+using namespace std;
+
+struct node
+{
+    int key;
+    struct node *leftChild, *rightChild;
+};
+
+//Function to build a new node
+struct node *newNode(int item)
+{
+    struct node *tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->key = item;
+    tmp->leftChild = tmp->rightChild = NULL;
+    return tmp;
+}
+
+//Function to insert a new node with specific key value
+struct node* insert(struct node* node, int key)
+{
+    if ( node == NULL)
+    {
+        return newNode(key);
+    }
+    if (key < node->key){
+        node->leftChild = insert(node->leftChild, key);
+    }
+    else if (key > node->key){
+        node->rightChild = insert(node->rightChild, key);
+    }
+    return node;
+}
+
+//Function inorder traversal
+void inorder(struct node *root){
+    if(root != NULL)
+    {
+        inorder(root->leftChild);
+        cout << root->key << endl;
+        inorder(root->rightChild);
+    }
+}
+
+//Function preorder traversal
+void preorder(struct node *root)
+{
+    if(root != NULL){
+        cout << root->key << endl;
+        preorder(root->leftChild);
+        preorder(root->rightChild);
+    }
+}
+
+//Function postorder traversal
+void postorder(struct node *root)
+{
+    if(root != NULL){
+        postorder(root->leftChild);
+        postorder(root->rightChild);
+        cout << root->key << endl;
+    }
+}
+
+//Function search key in BST
+bool search(struct node* root, int key)
+{
+    while(root != NULL){
+        cout << root->key <<endl;
+        if(root->key < key){
+            root = root->rightChild;
+        }
+        else if(root->key > key){
+            root = root->leftChild;
+        }
+        else{
+            return true;
+        }
+    }
+    return false;
+}
+
+//Function minimum key value
+struct node* minValueNode(struct node* node)
+{
+    struct node* current = node;
+    while(current->leftChild != NULL){
+        current = current->leftChild;
+    }
+    return current;
+}
+
+//Function delete a key value
+struct node* deleteNode(struct node* root, int key)
+{
+    if(root == NULL){
+        return root;
+    }
+    if(key < root->key){
+        root->leftChild = deleteNode(root->leftChild, key);
+    }
+    else if(key > root->key){
+        root->rightChild = deleteNode(root->rightChild, key);
+    }
+    else{
+        if(root->leftChild == NULL){
+            struct node *tmp = root->rightChild;
+            free(root);
+            return tmp;
+        }
+        else if(root->rightChild == NULL){
+            struct node *tmp = root->leftChild;
+            free(root);
+            return tmp;
+        }
+        struct node * tmp = minValueNode(root->rightChild);
+        root->key = tmp->key;
+        root->rightChild = deleteNode(root->rightChild, tmp->key);
+    }
+    return root;
+    
+}
+
+int main()
+{
+    int arr[10] = {30, 10, 45, 38, 20, 50, 25, 33, 8, 12};
+    int choice;
+    struct node *root = NULL;
+    root = insert(root, arr[0]);
+    do{
+        cout << "Enter your choice between 1 to 11 " <<endl;
+        cout << "1. Insert element from array into Binary Search Tree" <<endl;
+        cout << "2. Display the result of Inorder traversal" <<endl;
+        cout << "3. Display the result of Postorder traversal" <<endl;
+        cout << "4. Display the result of Preorder traversal" <<endl;
+        cout << "5. Search the key value 38" <<endl;
+        cout << "6. Search the key value 9" <<endl;
+        cout << "7. Delete the key value 10" <<endl;
+        cout << "8. New Inorder traversal after deletion" <<endl;
+        cout << "9. New Postorder traversal after deletion" <<endl;
+        cout << "10. New Preorder traversal after deletion" <<endl;
+        cout << "11. Exit program" <<endl;
+        cin >> choice;
+        
+        switch(choice)
+        {
+            case 1: {
+                for(int i = 1; i < 10; i++){
+                    insert(root, arr[i]);
+                }
+                break;
+            }
+            case 2: { cout << "The inorder traversal is:" <<endl;
+                inorder(root);
+                break;
+            }
+            case 3: {cout << "The postorder traversal is:" <<endl;
+                postorder(root);
+                break;
+            }
+            case 4: {cout << "The preorder traversal is:" <<endl;
+                preorder(root);
+                break;
+            }
+            case 5: {cout << "The search result for 38 and keys examined are:" <<endl;
+                if (search(root, 38)){
+                    cout << "Yes the key value existed in the tree" <<endl;
+                }
+                else cout << "Not found" <<endl;
+                break;
+            }
+            case 6: {cout << "The search result for 9 and keys examined are:" <<endl;
+                if (search(root, 9)){
+                    cout << "Yes the key value existed in the tree" <<endl;
+                }
+                else cout << "Not found" <<endl;
+                break;
+            }
+            case 7: {deleteNode(root, 10);
+                cout << "Key 10 is deleted" <<endl;
+                break;
+            }
+                
+            case 8: {root = deleteNode(root, 10);
+                cout << "The inorder traversal after deleting key 10:" <<endl;
+                inorder(root);
+                break;
+            }
+            case 9: {root = deleteNode(root, 10);
+                cout << "The postorder traversal after deleting key 10:" <<endl;
+                postorder(root);
+                break;
+            }
+            case 10: {root = deleteNode(root, 10);
+                cout << "The preorder traversal after deleting key 10:" <<endl;
+                preorder(root);
+                break;
+            }
+            case 11: {cout << "Program terminated" <<endl;
+                break;
+            }
+            default: cout << "Invalid choice." <<endl;
+        }
+        
+
+    }while(choice != 11);
+    return 0;
+}
+bash-3.2$ g++ BST.cpp 
+bash-3.2$ ./a.out
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+1
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+2
+The inorder traversal is:
+8
+10
+12
+20
+25
+30
+33
+38
+45
+50
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+3
+The postorder traversal is:
+8
+12
+25
+20
+10
+33
+38
+50
+45
+30
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+4
+The preorder traversal is:
+30
+10
+8
+20
+12
+25
+45
+38
+33
+50
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+5
+The search result for 38 and keys examined are:
+30
+45
+38
+Yes the key value existed in the tree
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+6
+The search result for 9 and keys examined are:
+30
+10
+8
+Not found
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+7
+Key 10 is deleted
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+8
+The inorder traversal after deleting key 10:
+8
+12
+20
+25
+30
+33
+38
+45
+50
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+9
+The postorder traversal after deleting key 10:
+8
+25
+20
+12
+33
+38
+50
+45
+30
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+10
+The preorder traversal after deleting key 10:
+30
+12
+8
+20
+25
+45
+38
+33
+50
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+15
+Invalid choice.
+Enter your choice between 1 to 11 
+1. Insert element from array into Binary Search Tree
+2. Display the result of Inorder traversal
+3. Display the result of Postorder traversal
+4. Display the result of Preorder traversal
+5. Search the key value 38
+6. Search the key value 9
+7. Delete the key value 10
+8. New Inorder traversal after deletion
+9. New Postorder traversal after deletion
+10. New Preorder traversal after deletion
+11. Exit program
+11
+Program terminated
+bash-3.2$ exit
+exit
+
+Script done on Wed Nov 21 21:07:12 2018

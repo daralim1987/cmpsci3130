@@ -1,0 +1,53 @@
+Script started on Tue Sep 25 21:05:14 2018
+[?1034hbash-3.2$ cat main.cpp
+//  main.cpp
+//  fibRecur
+//  Created by Dara Lim on 9/23/18.
+//  Copyright © 2018 Dara Lim. All rights reserved.
+
+#include <iostream>
+using namespace std;
+
+long long fib(long long n)
+{
+    if (n <= 1)
+        return n;
+    return fib(n-1)+fib(n-2);
+}
+
+int main(int argc, const char * argv[]) {
+    long long N;
+    cout << "Enter the positive number " << "";
+    cout << "and the programm will find its Fibonacci number: " <<endl;
+    cin >> N;
+    cout << "The Fibonacci number of positive integer "<< N << " is: " << fib(N) <<endl;
+    
+    return 0;
+}
+bash-3.2$ g++ main.cpp
+bash-3.2$ a.out
+bash: a.out: command not found
+bash-3.2$ ./a.out
+Enter the positive number and the programm will find its Fibonacci number: 
+6
+The Fibonacci number of positive integer 6 is: 8
+bash-3.2$ ./a.out
+Enter the positive number and the programm will find its Fibonacci number: 
+10
+The Fibonacci number of positive integer 10 is: 55
+bash-3.2$ ./a.out
+Enter the positive number and the programm will find its Fibonacci number: 
+3
+The Fibonacci number of positive integer 3 is: 2
+bash-3.2$ ./a.out
+Enter the positive number and the programm will find its Fibonacci number: 
+0
+The Fibonacci number of positive integer 0 is: 0
+bash-3.2$ ./a.out
+Enter the positive number and the programm will find its Fibonacci number: 
+30
+The Fibonacci number of positive integer 30 is: 832040
+bash-3.2$ exit
+exit
+
+Script done on Tue Sep 25 21:07:49 2018

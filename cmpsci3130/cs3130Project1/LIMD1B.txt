@@ -1,0 +1,71 @@
+Script started on Tue Sep 25 21:09:33 2018
+[?1034hbash-3.2$ g[Kcat main.cpp
+//  main.cpp
+//  fibIter
+//  Created by Dara Lim on 9/23/18.
+//  Copyright © 2018 Dara Lim. All rights reserved.
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, const char * argv[]) {
+    int n;
+    int pre1 = 0;
+    int pre2 = 1;
+    int next;
+    cout << "Enter the positive integer n ";
+    cout << "and the program will find the fibonacci of n" <<endl;
+    cin >> n;
+    for(int i = 0; i <= n; i++)
+    {
+        if(i <= 1){
+            next = i;
+        }
+        else{
+            next = pre1 + pre2;
+            pre1 = pre2;
+            pre2 = next;
+        }
+    }
+    cout << "The Fibonacci number is: " << next <<endl;
+    return 0;
+}
+bash-3.2$ g++ main.cpp
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+1
+The Fibonacci number is: 1
+bash-3.2$ 3
+bash: 3: command not found
+bash-3.2$ 3./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+3
+The Fibonacci number is: 2
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+4
+The Fibonacci number is: 3
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+5
+The Fibonacci number is: 5
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+6
+The Fibonacci number is: 8
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+7
+The Fibonacci number is: 13
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+9
+The Fibonacci number is: 34
+bash-3.2$ ./a.out
+Enter the positive integer n and the program will find the fibonacci of n
+30
+The Fibonacci number is: 832040
+bash-3.2$ exit
+exit
+
+Script done on Tue Sep 25 21:11:52 2018
